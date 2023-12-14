@@ -1,0 +1,616 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>The development of digital remote sensing &#8212; Aerial Survey, Remote Sensing and Archaeology - A Guide to Good Practice</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script async="async" kind="hypothesis" src="https://hypothes.is/embed.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'content/1_remote_sensing';</script>
+    <link rel="canonical" href="https://archaeologydataservice.ac.uk/content/1_remote_sensing.html" />
+    <link rel="shortcut icon" href="../_static/ads_logo2.png"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Digital Data Sources" href="../chapter_2.html" />
+    <link rel="prev" title="Aerial survey for archaeology" href="1_ap_im.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
+
+<a class="navbar-brand logo" href="../index.html">
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/ads_logo.png" class="logo__image only-light" alt="Logo image"/>
+    <script>document.write(`<img src="../_static/ads_logo.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../index.html">
+                    Welcome
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="0_about_guide.html">About this guide</a></li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="../chapter_1.html">1. Aerial Photography, Remote Sensing and Archaeology</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="1_ap_im.html">Aerial photography and interpretative mapping</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">The development of digital remote sensing</a></li>
+
+
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../chapter_2.html">2. Digital Data Sources</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="2_comm_data.html">Commercial data sources</a></li>
+<li class="toctree-l2"><a class="reference internal" href="2_scan_digit.html">Scanning and digitising</a></li>
+<li class="toctree-l2"><a class="reference internal" href="2_data_format.html">Overview of data formats</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../chapter_3.html">3. Documenting your Resource</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="3_why_doc.html">Why document your data?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="3_how_doc.html">How to document your resource</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../chapter_4.html">4. Archiving your Data</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="4_dep_info.html">Depositing information</a></li>
+<li class="toctree-l2"><a class="reference internal" href="4_case_study.html">Aerial photography case study</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../chapter_5.html">5. References</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="5_bib.html">Bibliography</a></li>
+<li class="toctree-l2"><a class="reference internal" href="5_sugg_reading.html">Suggested Reading</a></li>
+<li class="toctree-l2"><a class="reference internal" href="5_glossary.html">Glossary</a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li class="toctree-l2"><a class="reference internal" href="5_app1.html">Appendix 1 - sources of aerial photography</a></li>
+</ul>
+</li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/nickyjgarland/g2gp_ap" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/nickyjgarland/g2gp_ap/edit/master/docs/content/1_remote_sensing.md" target="_blank"
+   class="btn btn-sm btn-source-edit-button dropdown-item"
+   title="Suggest edit"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-pencil-alt"></i>
+  </span>
+<span class="btn__text-container">Suggest edit</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/nickyjgarland/g2gp_ap/issues/new?title=Issue%20on%20page%20%2Fcontent/1_remote_sensing.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/content/1_remote_sensing.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script>
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>The development of digital remote sensing</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">The development of digital remote sensing</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#current-developments">Current developments</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#sensor-types-and-their-use">Sensor types and their use</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#airborne-multispectral-scanners">Airborne multispectral scanners</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#airborne-thermography">Airborne thermography</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#optical-imagery-from-space">Optical imagery from space</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#radar-imagery-from-space">Radar imagery from space</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ground-based-imagery">Ground-based imagery</a></li>
+</ul>
+</li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="the-development-of-digital-remote-sensing">
+<h1>The development of digital remote sensing<a class="headerlink" href="#the-development-of-digital-remote-sensing" title="Permalink to this heading">#</a></h1>
+<p>Remote sensing for archaeology is still largely based on low altitude aerial survey techniques at optical and near infra-red wavelengths. The most important developments since the 1970s were the introduction of digital multispectral imaging sensors, thermal imaging radiometers,imaging RADAR and more recently Lidar. These sensors have increased the wavelength range at which images can be acquired into the short wave, middle (thermal) infra-red, and microwave range. The data are produced in a digital form that can be enhanced, rectified and reclassified using a wide variety of algorithms and specialist software. The output of such procedures can be used to identify a wide variety of features which may be of interest to researchers.</p>
+<p>Until very recently available civilian optical satellite imagery has been of low spatial resolution and of limited use in archaeology. There have been a few notable studies that have demonstrated its value in particular circumstances. However, new developments have altered the value of spaceborne satellite imagery. Both the Russian and American military spy satellite programmes have released photography with up to 2m ground resolution and such digital imagery has good geometric fidelity and can easily be integrated into Geographical Information Systems. Other important developments have been made in RADAR imaging since Charles Elachi first showed that NASA’s Shuttle Imaging Radar (SIR) could penetrate very dry and smooth sand surfaces to reveal buried structures <span id="id1">[<a class="reference internal" href="5_bib.html#id12" title="C. Elachi. Radar Images from Space. Scientific American, 247(6):54–61, 1982.">Elachi, 1982</a>]</span>. The Shuttle radar system has been considerably enhanced and may soon be followed by an orbiting radar sensor.</p>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="current-developments">
+<h1>Current developments<a class="headerlink" href="#current-developments" title="Permalink to this heading">#</a></h1>
+<p>Remote sensing for archaeology has developed swiftly in the past decade and perhaps the greatest change has been in the use of lidar imagery using laser beams to record the landscape, (Light detecting and ranging) <span id="id2">[<a class="reference internal" href="5_bib.html#id9" title="S. Crutchley and P. Crow. The Light Fantastic: using airborne laser scanning in archaeological survey. English Heritage, Swindon, 2009.">Crutchley and Crow, 2009</a>]</span>. There are important new developments in space imaging that may see vertical aerial photography replaced by high resolution satellite digital images. Airborne sensors are improving all the time and becoming much cheaper to build and deploy. Thermal and RADAR imaging sensors have also improved recently and these offer considerable potential for detecting buried structures. Satellites also provide accurate positional information on the Earth’s surface using the US Navstar Global Positioning System (GPS) or the Russian GLONASS which is especially important for the accurate mapping of relatively small-scale archaeological features.</p>
+<p>The science of image processing has also developed very rapidly since its birth in the 1960s at NASA’s Jet Propulsion Laboratory. It is now possible to convert prints and films from analogue to digital form relatively cheaply, and to use widely available processing techniques geometrically to correct or visually enhance the imagery. High quality image scanners are now relatively cheap to buy and so digital image processing can be used to improve the geometry or visual quality of oblique and vertical aerial photography as well as digital sensor data <span id="id3">[<a class="reference internal" href="5_bib.html#id23" title="I. Scollar, A. Tabbagh, A. Hesse, and I. Herzog. Archaeological Prospecting and Remote Sensing. Cambridge University Press, Cambridge, 1990.">Scollar <em>et al.</em>, 1990</a>]</span>.</p>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="sensor-types-and-their-use">
+<h1>Sensor types and their use<a class="headerlink" href="#sensor-types-and-their-use" title="Permalink to this heading">#</a></h1>
+<section id="airborne-multispectral-scanners">
+<h2>Airborne multispectral scanners<a class="headerlink" href="#airborne-multispectral-scanners" title="Permalink to this heading">#</a></h2>
+<p>Archaeological structures can usually be seen well from the air while crop and soilmarks are more difficult to detect with certainty. The visibility of cropmarks in particular depends on vegetation type, illumination and soil conditions. Multispectral remote sensing is able to look simultaneously at a wide range of different wavelengths, many of which are more sensitive to vegetation status than either the human eye or photographic film. The limited spectral range of photographic film (350-1100nm) is overcome by the use of photoelectric sensing devices that record their data in a digital form. These devices separate light into a number of discrete narrow wavebands, hence the term multispectral. This has the advantage of allowing scientists to look at particular parts of the wavelength range in isolation, or to combine different wavelength ranges that are of particular interest.</p>
+<p>In the United Kingdom, research work has been undertaken by the Natural Environment Research Council (NERC) in part of the Fenlands <span id="id4">[<a class="reference internal" href="5_bib.html#id10" title="D.N.M. Donoghue and I. Shennan. The Application of Remote Sensing to Wetland Archaeology. International Journal of Geoarchaeology, 3:275–285, 1988. doi:https://doi.org/10.1002/gea.3340030404.">Donoghue and Shennan, 1988</a>, <a class="reference internal" href="5_bib.html#id24" title="I. Shennan and D.N.M. Donoghue. Remote Sensing in Archaeological Research. Proceedings of the British Academy, 77:223–232, 1992.">Shennan and Donoghue, 1992</a>, <a class="reference internal" href="5_bib.html#id11" title="Donoghue D.N. and I. Shennan. The Application of Multispectral Remote Sensing Techniques to Wetland Archaeology. In P. Murphy and C. French, editors, The Exploitation of Wetlands, volume 186 of BAR British Series, pages 47–59. 1988.">Donoghue D.N. and Shennan, 1988</a>]</span>, the Nottingham area <span id="id5">[<a class="reference internal" href="5_bib.html#id3" title="Allsop and Greenbaum. Proceedings of the 5th NERC Airborne Symposium. Natural Environment Research Council. NERC, Swindon, UK, 1989.">Allsop and Greenbaum, 1989</a>]</span>, the Vale of Pickering <span id="id6">[<a class="reference internal" href="5_bib.html#id19" title="D. Powlesland and D. Donoghue. A multi-sensor approach to mapping the prehistoric landscape. In Proceedings of the 9th NERC Airborne Symposium, pages 88–96. NERC, Swindon, UK, 1993.">Powlesland and Donoghue, 1993</a>, <a class="reference internal" href="5_bib.html#id20" title="D. Powlesland, J. Lyall, and D.N.M. Donoghue. Enhancing the Record Through Remote Sensing. The application and integration of multi-sensor, non-invasive remote sensing techniques for the enhancement of the Sites and Monuments Record. Heslerton Parish Project, 1997. Place: Yorkshire, England. URL: http://intarch.york.ac.uk/journal/issue2/pld_index.html.">Powlesland <em>et al.</em>, 1997</a>, <a class="reference internal" href="5_bib.html#id21" title="C. Pryor, D.N.M. Donoghue, and D.J. Powlesland. Integration of remotely sensed and ground based geophysical data for archaeological prospecting using a geographical information system. In A.P. Crackerell and R.A. Vaughn, editors, Proceedings of the 18th Annual Conference of the Remote Sensing Society, 197–207. 1992.">Pryor <em>et al.</em>, 1992</a>]</span>, Wroxeter (unpublished) and the Welland and Nene valleys (unpublished) to assess the archaeological potential of multispectral data. In the United States, a number of studies have been undertaken to record the archaeology and environment at Chaco Canyon in New Mexico and other sites <span id="id7">[<a class="reference internal" href="5_bib.html#id4" title="T.E. Avery and T.R. Lyons. Remote Sensing: Aerial and Terrestrial Photography for Archaeologists. National Park Service, Washington DC, 1981.">Avery and Lyons, 1981</a>, <a class="reference internal" href="5_bib.html#id15" title="T.R. Lyons and T.E. Avery. Remote Sensing: A Handbook for Archaeologists and Cultural Resource Managers. National Park Service, Washington DC, 1977.">Lyons and Avery, 1977</a>, <a class="reference internal" href="5_bib.html#id16" title="T.R. Lyons and F.J. Mathien, editors. Cultural Resources Remote Sensing. National Park Service Cultural Resources Management Division, Washington DC, 1980.">Lyons and Mathien, 1980</a>]</span>. These studies were undertaken in areas unsuitable for the formation of crop and soilmarks and have demonstrated the value of near infra-red and thermal infra-red imagery in enhancing the archaeological record.</p>
+</section>
+<section id="airborne-thermography">
+<h2>Airborne thermography<a class="headerlink" href="#airborne-thermography" title="Permalink to this heading">#</a></h2>
+<p>Thermal prospection techniques have many important applications in geology, archaeology and environmental monitoring. Both pre-dawn and daytime thermal imagery have proved valuable in detecting or providing additional information on buried archaeological structures. Unfortunately, much of the information content in thermal imagery is hidden by the relatively uniform temperature of the ground surface. However, heat flow is governed by time, depth, density, heat capacity and thermal conductivity, all properties relevant to ground disturbance. Pre-dawn and mid-day images can be combined to compute the diurnal heat capacity (otherwise termed the thermal resistance to temperature change or apparent thermal inertia) of the ground. Apparent thermal inertia (ATI) offers considerable potential for the detection of buried archaeology. Seminal work by Tabbagh has illustrated the value of these techniques <span id="id8">[<a class="reference internal" href="5_bib.html#id23" title="I. Scollar, A. Tabbagh, A. Hesse, and I. Herzog. Archaeological Prospecting and Remote Sensing. Cambridge University Press, Cambridge, 1990.">Scollar <em>et al.</em>, 1990</a>, <a class="reference internal" href="5_bib.html#id25" title="Tabbagh. Les proprietes thermiques des sols. Archaeo-Physica, 6:128–148, 1976.">Tabbagh, 1976</a>, <a class="reference internal" href="5_bib.html#id26" title="Tabbagh. Prospection thermique aeroportee du site de Prepoux. Revue d’Archaeometrie, 7:11–25, 1979.">Tabbagh, 1979</a>]</span>.</p>
+<p>In the UK, NERC operates an airborne sensor capable of thermography. Other sources of thermal imagery include analogue sensors flown by the UK Royal Air Force and Police. Although not widely available, these data have been used to detect ground disturbance associated with archaeology. Airborne thermal radiometry can cover large areas at low unit cost and provide digital data that can be combined with other sources of information.</p>
+</section>
+<section id="optical-imagery-from-space">
+<h2>Optical imagery from space<a class="headerlink" href="#optical-imagery-from-space" title="Permalink to this heading">#</a></h2>
+<p>Optical space photography dates back to the first manned space flights. However, systematic coverage of the Earth is obtained from orbiting satellites that use conventional film or digital imaging devices. Relatively high resolution panchromatic imagery can be obtained from the French SPOT-3 satellite (10m) and the Indian IRS system (5m). The best available Russian photography is from the KVR-1000 camera where the photographic film is digitised to provide 2m resolution over a 40km by 40km area. The best American data come from commercially available digital camera systems. Earlybird (3m), Carterra-1 (1m), Orbview-3 (1-2m) and Quickbird (0.82m) are either just recently launched or soon to be launched. An illustration of this type of imagery is given by <span id="id9">Fowler [<a class="reference internal" href="5_bib.html#id14" title="M. Fowler. High-Resolution Satellite Imagery in Archaeological Application – A Russian Satellite Photograph of the Stonehenge Region. Antiquity, 70:667–671, 1996. doi:https://doi.org/10.1017/S0003598X00083812.">1996</a>]</span> for Wiltshire. Some of these new systems have a limited multispectral capability that may be of value.</p>
+</section>
+<section id="radar-imagery-from-space">
+<h2>Radar imagery from space<a class="headerlink" href="#radar-imagery-from-space" title="Permalink to this heading">#</a></h2>
+<p>The value of spaceborne radar imagery has been its ability to penetrate very dry, smooth sand and tropical forest canopies to reveal archaeology beneath. Data from NASA’s Shuttle Imaging Radar (SIR) system have been used to demonstrate the existence of palaeo-channels in desert areas of the USA, north Africa and the Middle East <span id="id10">[<a class="reference internal" href="5_bib.html#id17" title="J.F. McCauley, G.G. Schaber, C.S. Breed, M.J. Grolier, C.V. Haynes, B. Issawi, C. Elachi, and R. Blom. Subsurface valleys and geoarchaeology of the eastern Sahara revealed by Shuttle Radar. Science, 218:1004–1020, 1982.">McCauley <em>et al.</em>, 1982</a>]</span>. The same system has been used to reveal important archaeology hidden under dense forest canopy, such as Mayan canals in Mexico and Guatemala and around the city of Angkor in Kampuchea. There have only been four SIR missions. The last was in 1994, and so the data is only available for a part of the Earth. Spaceborne radar works independently of weather, day and night, because it supplies its own energy to illuminate the ground. Most radar sensors have poor spatial resolution and are not useful for directly detecting archaeology. However, they are good at many forms of environmental mapping.</p>
+</section>
+<section id="ground-based-imagery">
+<h2>Ground-based imagery<a class="headerlink" href="#ground-based-imagery" title="Permalink to this heading">#</a></h2>
+<p>The archaeological examination of standing structures, such as historic buildings and monuments, may be aided by the use of ground-based remote sensing techniques to enhance or elucidate concealed information. Typical applications employ multispectral imaging to provide geological and construction phase differentiation in walls and related building features, laser contour profiling and thermal prospection to reveal features hidden under plaster.</p>
+<p>In the UK, research work has been undertaken at the University of Nottingham <span id="id11">[<a class="reference internal" href="5_bib.html#id6" title="C.J. Brooke. Ground Based Remote Sensing. Institute of Field Archaeologists Technical Paper, 1989.">Brooke, 1989</a>, <a class="reference internal" href="5_bib.html#id7" title="C.J. Brooke. Ground based remote sensing of buildings and archaeological sites: ten years research to operation. Archaeological Prospection, 1(2):105–119, 1994. doi:https://doi.org/10.1002/1099-0763(199412)1:2&lt;105::AID-ARP6140010204&gt;3.0.CO;2-F.">Brooke, 1994</a>]</span> examining historic buildings and monuments over a wide area and timescale. In Germany, thermal prospection has been employed successfully for many years to reveal hidden building construction and concealed features <span id="id12">[<a class="reference internal" href="5_bib.html#id8" title="von J. Cramer. Thermografie in Der Bauforschung. Archaeologie und Naturwissenschaft, 2:44–54, 1981.">Cramer, 1981</a>]</span>.</p>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./content"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+                <footer class="bd-footer-article">
+                  
+<div class="footer-article-items footer-article__inner">
+  
+    <div class="footer-article-item"><!-- Previous / next buttons -->
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="1_ap_im.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Aerial survey for archaeology</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="../chapter_2.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Digital Data Sources</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div></div>
+  
+</div>
+
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">The development of digital remote sensing</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#current-developments">Current developments</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#sensor-types-and-their-use">Sensor types and their use</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#airborne-multispectral-scanners">Airborne multispectral scanners</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#airborne-thermography">Airborne thermography</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#optical-imagery-from-space">Optical imagery from space</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#radar-imagery-from-space">Radar imagery from space</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ground-based-imagery">Ground-based imagery</a></li>
+</ul>
+</li>
+</ul>
+
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Bob Bewley, Danny Donoghue, Vince Gaffney, Martijn van Leusen, Alicia Wise (1998). Revised by Bob Bewley and Kieron Niven, Archaeology Data Service / Digital Antiquity (2011)
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+<div class="extra_footer">
+  The Archaeology Data Service makes all of their materials publicly available under  <a href="https://archaeologydataservice.ac.uk/help-guidance/data-reuse/">a creative commons license</a>
+
+</div>
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

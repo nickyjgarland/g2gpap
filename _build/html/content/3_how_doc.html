@@ -1,0 +1,793 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>How to document your resource &#8212; Aerial Survey, Remote Sensing and Archaeology - A Guide to Good Practice</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script async="async" kind="hypothesis" src="https://hypothes.is/embed.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'content/3_how_doc';</script>
+    <link rel="canonical" href="https://archaeologydataservice.ac.uk/content/3_how_doc.html" />
+    <link rel="shortcut icon" href="../_static/ads_logo2.png"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Archiving your data" href="../chapter_4.html" />
+    <link rel="prev" title="Why document your data?" href="3_why_doc.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
+
+<a class="navbar-brand logo" href="../index.html">
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/ads_logo.png" class="logo__image only-light" alt="Logo image"/>
+    <script>document.write(`<img src="../_static/ads_logo.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../index.html">
+                    Welcome
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="0_about_guide.html">About this guide</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../chapter_1.html">1. Aerial Photography, Remote Sensing and Archaeology</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="1_ap_im.html">Aerial photography and interpretative mapping</a></li>
+<li class="toctree-l2"><a class="reference internal" href="1_remote_sensing.html">The development of digital remote sensing</a></li>
+
+
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../chapter_2.html">2. Digital Data Sources</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="2_comm_data.html">Commercial data sources</a></li>
+<li class="toctree-l2"><a class="reference internal" href="2_scan_digit.html">Scanning and digitising</a></li>
+<li class="toctree-l2"><a class="reference internal" href="2_data_format.html">Overview of data formats</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="../chapter_3.html">3. Documenting your Resource</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="3_why_doc.html">Why document your data?</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">How to document your resource</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../chapter_4.html">4. Archiving your Data</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="4_dep_info.html">Depositing information</a></li>
+<li class="toctree-l2"><a class="reference internal" href="4_case_study.html">Aerial photography case study</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../chapter_5.html">5. References</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="5_bib.html">Bibliography</a></li>
+<li class="toctree-l2"><a class="reference internal" href="5_sugg_reading.html">Suggested Reading</a></li>
+<li class="toctree-l2"><a class="reference internal" href="5_glossary.html">Glossary</a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li class="toctree-l2"><a class="reference internal" href="5_app1.html">Appendix 1 - sources of aerial photography</a></li>
+</ul>
+</li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/nickyjgarland/g2gp_ap" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/nickyjgarland/g2gp_ap/edit/master/docs/content/3_how_doc.md" target="_blank"
+   class="btn btn-sm btn-source-edit-button dropdown-item"
+   title="Suggest edit"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-pencil-alt"></i>
+  </span>
+<span class="btn__text-container">Suggest edit</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/nickyjgarland/g2gp_ap/issues/new?title=Issue%20on%20page%20%2Fcontent/3_how_doc.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/content/3_how_doc.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script>
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>How to document your resource</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#subject">Subject</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#spatial-and-temporal-coverage">Spatial and temporal coverage</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#format">Format</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rights-management">Rights management</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#creator">Creator</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#date">Date</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#relation">Relation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#instrumentation">Instrumentation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#resolution">Resolution</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#processsing-log">Processsing log</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#type">Type</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#legend">Legend</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bibliography">Bibliography</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#references">References</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="how-to-document-your-resource">
+<h1>How to document your resource<a class="headerlink" href="#how-to-document-your-resource" title="Permalink to this heading">#</a></h1>
+<p>As described elsewhere in these Guides, documentation is required at a number of levels. Whereas generic project-level documentation is described elsewhere (see the general section on <a class="reference external" href="https://archaeologydataservice.ac.uk/help-guidance/guides-to-good-practice/the-project-lifecycle/project-metadata/">‘Project Metadata’</a> and <a class="reference internal" href="4_case_study.html"><span class="doc std std-doc">Aerial photography case study</span></a> of this guide), this section outlines the documentation required for individual datasets within an aerial survey project and may be repeated multiple times for different sets of data.</p>
+<p>The following table contains a list of metadata elements and documentation <em><em>absolutely essential</em></em> to digital resources created by archaeologists from aerial photography or remotely sensed data. Each entry is explained in more detail under the relevant heading below.</p>
+<p><strong>Table 1:</strong> Essential Metadata elements and documentation</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-left head"><p>Essential Element</p></th>
+<th class="text-right head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-left"><p>Subject</p></td>
+<td class="text-right"><p>Archaeological keywords, preferably drawn from terminology sources (e.g. thesauri like the Thesaurus of Monument Types) where appropriate.</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>Coverage</p></td>
+<td class="text-right"><p>The spatial/geographic and temporal location of the subject.</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>Format</p></td>
+<td class="text-right"><p>The format of the data.</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>Rights Management</p></td>
+<td class="text-right"><p>Any copyright and other legal or financial restrictions on the free use of the data.</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>Creator and Other Contributors</p></td>
+<td class="text-right"><p>Specify main source(s), author(s), funder(s), and other contributers to the data’s creation.</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>Date</p></td>
+<td class="text-right"><p>Date and time of first acquisition/survey of the source data, plus key dates in the life cycle of the dataset.</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>Relation</p></td>
+<td class="text-right"><p>Links to relevant information held in other places.</p></td>
+</tr>
+</tbody>
+</table>
+<p>We <em><em>recommend</em></em> additional documentation for digital resources based on aerial photography or remotely sensed data. Each entry is explained in more detail below.</p>
+<p><strong>Table 2:</strong> Recommended Metadata elements and documentation</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-left head"><p>Recommended Element</p></th>
+<th class="text-right head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-left"><p>Instrumentation</p></td>
+<td class="text-right"><p>Specify the instrumentation used to capture the original data, and an indication of which spectral bands were used.</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>Resolution</p></td>
+<td class="text-right"><p>Indicate the scale/spatial precision of the data.</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>Processing Log</p></td>
+<td class="text-right"><p>A free text field containing a log of processing steps which were used to produce the data.</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>Type</p></td>
+<td class="text-right"><p>The technical specification of an image, e.g. ‘oblique stereo photograph’.</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>Legend</p></td>
+<td class="text-right"><p>The conventions (colours, symbols, etc) used in the dataset.</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>Bibliography</p></td>
+<td class="text-right"><p>Indicates where to find relevant, further information on the collection, processing and interpretation of the data.</p></td>
+</tr>
+</tbody>
+</table>
+<section id="subject">
+<h2>Subject<a class="headerlink" href="#subject" title="Permalink to this heading">#</a></h2>
+<p>Describing the subject of your dataset in a way that helps other archaeologists find information that is relevant for their research can be a tricky business. This is especially true when a dataset (for example an aerial photograph interpretation) contains information about a site or monument that has not been excavated or extensively surveyed. Numerous terms can be used to describe the subject of the rectification – from the generic ‘archaeological monument’ through terms such as ‘Late Prehistoric’ and then on to specific terms such as ‘henge’ and toponymics such as ‘Stonehenge’. Luckily there are a few ways of ensuring that others know how to interpret the subject keywords that you choose.</p>
+<p>If you are consistent in the level at which you assign keywords, other archaeologists who regularly use your documentation will have an easier time. Clearly indicating when you have chosen a keyword that is possible or uncertain can also be helpful.</p>
+<p>The best way to assign keywords so that others will be able to interpret your meaning correctly is to try and use standard terminology. In the UK a number of helpful thesauri have been developed which provide suggestions for words that can be generally used to describe both archaeological sites and artefacts[1]. Even if these terminology standards do not offer terms that are precise enough for a specialist’s needs they provide a good, generalised starting place. Additional keywords can be added to specify the precise subject in more specialised terms.</p>
+</section>
+<section id="spatial-and-temporal-coverage">
+<h2>Spatial and temporal coverage<a class="headerlink" href="#spatial-and-temporal-coverage" title="Permalink to this heading">#</a></h2>
+<p>Others will need to know where and when on earth your data refer to, and you’ll no doubt need to keep detailed track of this for your own purposes too. It’s possible to identify the spatial and temporal location of your aerial photograph rectification in a number of ways, including text descriptions (e.g. placenames and temporal period names) and numeric descriptions (e.g. UTM coordinates, latitude and longitude, National Grid References).</p>
+<p>General points to keep in mind when describing spatial and temporal locations include keeping track of the numeric location as well as a text description, as placenames are often repeated (e.g. Dublin, Ireland and Dublin, Ohio in the United States) and temporal names mean different things in different places (e.g. the ‘Roman’ period does not start until the late first century AD in Scotland).</p>
+<p>For numeric descriptions of image location there must be provision of a valid geographical centre point, bounding box or polygon boundary description. It is important to label the x, y, and z coordinates clearly and specify the unit of measurement used. It’s also very helpful if you are able to indicate the precision with which you have recorded the spatial location.</p>
+</section>
+<section id="format">
+<h2>Format<a class="headerlink" href="#format" title="Permalink to this heading">#</a></h2>
+<p>It is important to provide a description of the format of each file in your dataset is stored in and an overview of formats is provided in <a class="reference external" href="https://archaeologydataservice.ac.uk/help-guidance/guides-to-good-practice/data-collection-and-fieldwork/aerial-survey/digital-data-sources/overview-of-data-formats/">Overview of data formats</a>. Appropriate formats for archiving digital datasets resulting from aerial photographs or remotely sensed images are discussed in <a class="reference internal" href="4_dep_info.html"><span class="doc std std-doc">Archiving your data</span></a>.</p>
+</section>
+<section id="rights-management">
+<h2>Rights management<a class="headerlink" href="#rights-management" title="Permalink to this heading">#</a></h2>
+<p>All information users need accurate information about copyright restrictions that relate to a data resource. Clear indication of who controls copyright on all aspects of the information contained within a digital file is especially important. If you re-use digital data for which you do not own the copyright, you should indicate this and refer potential users to any documentation that describes who can and can not access and use the information. For example, if you have used a SPOT satellite image as part of a GIS project it may well be a violation of your licence from SPOT to share the original satellite image with anyone else.</p>
+</section>
+<section id="creator">
+<h2>Creator<a class="headerlink" href="#creator" title="Permalink to this heading">#</a></h2>
+<p>The term ‘creator’ can be a bit misleading, because often no single person can be credited with primary intellectual responsibility for a digital resource. Instead it is helpful to keep track of anyone whose involvement helped produce the digital dataset. This includes information about the funding agency or developer who paid for the images/interpretation/research, the company or organisation responsible for production of the source image, pilots, photographers, rectifiers, image processors, project managers, and others. However, don’t get too carried away and list every person who walked into the room where the digital dataset was being created, but rather choose the people and organisations most important in helping to create and maintain the data. At a minimum, the data provider and creator of the metadata should be entered here.</p>
+</section>
+<section id="date">
+<h2>Date<a class="headerlink" href="#date" title="Permalink to this heading">#</a></h2>
+<p>There are many different kinds of dates that are important in the life cycle of a digital dataset related to aerial photography and remote sensing. Despite this, the date field should only refer to the date of image capture. Dates referring to the content of the digital file — for example the archaeological period in which a monument was built — are best described under the heading of spatial and temporal coverage. Any other date information, including interpretation date, documentation date, publication date, and archiving date, should be placed within the processing log.</p>
+<p>The International Standards Organisation has made a recommendation for the best way to record dates in ISO8601 [2]. Their recommendation is that dates be identified either in the format YYYY or YYYY-MM-DD where YYYY is the year, MM is the month, and DD is the date. In some cases the exact time an image was acquired may be relevant, for example when it is important to minimise shading in a satellite image; please record this information too.</p>
+</section>
+<section id="relation">
+<h2>Relation<a class="headerlink" href="#relation" title="Permalink to this heading">#</a></h2>
+<p>Any text or number code which is used to identify a resource uniquely should be recorded. Examples include image or photographic frame numbers from commercial data suppliers, internal project identification numbers, and accession numbers issued by archives, libraries, museums, the National Monuments Record (NMR), and the regional Historic Environment Records (HERs) or Sites and Monuments Records (SMRs).</p>
+</section>
+<section id="instrumentation">
+<h2>Instrumentation<a class="headerlink" href="#instrumentation" title="Permalink to this heading">#</a></h2>
+<p>Often a specific instrument is coupled with its own software or, in the case of aerial photography, a specialist camera may be associated with a calibration file (essential information for the rectification of distortion and other errors associated with a specific instrument and image). For the user of aerial photographic or remote sensing data it is essential to understand the limitations or characteristics associated with instrumentation; for the provider of such data it is therefore essential to record the instrument and any other relevant technical data.</p>
+<p>Common instruments are SPOT (Satellite Pour l’Observation de la Terre) and Landsat.</p>
+<ul class="simple">
+<li><p>SPOT (e.g. SPOT Panchromatic, SPOT XS, SPOT 5) is a remote sensing satellite which has been developed by the French National Space Centre (CNES). The first SPOT (SPOT 1) was launched in February 1986, SPOT 2 was launched in 1988.</p></li>
+<li><p>Landsat (e.g. Landsat MSS and Landsat TM) is another series of satellites that produce images of the earth. The Landsat remote sensing satellite program was developed by NASA (National Aeronautics and Space Administration). Landsat data are provided in .BIL (band interleaved by line) or .BIP (band interleaved by pixel) formats.</p></li>
+</ul>
+<p>Other common instrument types include:</p>
+<ul class="simple">
+<li><p>KVR 1000</p></li>
+<li><p>MK4</p></li>
+<li><p>KFA (1000/3000)</p></li>
+<li><p>Shuttle Oblique Photography</p></li>
+<li><p>Radarsat / Radarsat – Stereo</p></li>
+<li><p>ERS 1/2</p></li>
+<li><p>Carterra 1</p></li>
+<li><p>Earlybird</p></li>
+<li><p>Quickbird</p></li>
+<li><p>Orbview 3</p></li>
+<li><p>HSI</p></li>
+<li><p>Aries 1</p></li>
+</ul>
+</section>
+<section id="resolution">
+<h2>Resolution<a class="headerlink" href="#resolution" title="Permalink to this heading">#</a></h2>
+<p>Most remote sensing data are collected and supplied in digital raster format. This means that each single digital number represents one observation of a piece of the earth’s surface. The size and shape of this area is the spatial resolution. Resolution is related to scale and precision (quantifying the size and location of the smallest feature that can exist in the data), but not to accuracy (indicating whether a specific stated size or location is in fact correct). Information about resolution is important as it implicitly specifies both the geographic precision and the size of archaeological features that one can reasonably expect to discover in the data.</p>
+<p>Although in some circumstances you can specify the resolution of a dataset with just one figure (’25 metres’ would indicate that both the X- and the Y-resolution are 25 metres), good practice requires that you give separate X and Y resolutions. A single resolution figure is often insufficient for a variety of reasons:</p>
+<ul class="simple">
+<li><p>Depending on the instrument or sensor used, resolution may be the same for all the pixels (picture elements) in an image, or it may vary depending on the angle and distance between the instrument and the ground. Resolution is indicated by giving horizontal size (across track) and a vertical size (along track) of a pixel, which can be in metres or in arc seconds. Pixels can be (extremely) elongated, as in high-resolution RS data collected by low-flying aircraft. There are other common distortions to the stated resolution in such data but you can often account for these simply by specifying the instrumentation (see above).</p></li>
+<li><p>For photographic originals that are being converted to a digital format by scanning, the software can be configured to result in different X and Y resolutions.</p></li>
+</ul>
+<p>Remember, any geometric transformation (such as georeferencing) or image enhancing technique (such as filtering) that is applied to a digital dataset may result in altered resolution settings which may bear no direct relation with the resolution of the original. If precise information about resolution is unobtainable, it will help if you can provide data about the instrument height, and scale of original (as in APs), etc.</p>
+<p>As many general purpose scanners apply false (interpolated) resolution rather than true (optical) resolution, it is often wise to document the scanner used and the scanning resolution. Scanning resolution is generally specified as dots per inch or lines per inch.</p>
+</section>
+<section id="processsing-log">
+<h2>Processsing log<a class="headerlink" href="#processsing-log" title="Permalink to this heading">#</a></h2>
+<p>There are three main categories of information about processing that are important to document: pre-processing, cleaning, and rectification. For all items listed in a processing log it is generally a good idea to indicate clearly what software was used, giving the full name and version numbers, and when the major processing steps took place.</p>
+<p>‘Pre-processing’ usually encompasses any processing step that is performed in order to get digital data into a useful form for analysis and interpretation to begin. There is such huge variation in how this can be done that it is impossible to provide a complete list of options here. In general, though, it is important to document:</p>
+<ul class="simple">
+<li><p>Description of the original image</p></li>
+<li><p>A list of all steps leading to the production of the digital version</p></li>
+<li><p>Final image type</p></li>
+<li><p>Final format in which the image is held</p></li>
+</ul>
+<p>When documenting procedures relating to the cleaning of digital remote sensing data, you may wish to include:</p>
+<ul class="simple">
+<li><p>A list of software used – it’s generally a good idea to specify the precise version</p></li>
+<li><p>A description of all radiometric corrections</p></li>
+<li><p>A description of all destriping activities</p></li>
+<li><p>A description of all noise reduction or despiking activities</p></li>
+</ul>
+<p>Finally, it is important to document all processes carried out while rectifying or georeferencing digital image files. This requires you to:</p>
+<ul class="simple">
+<li><p>Specify ‘target’ coordinate points</p></li>
+<li><p>Note how you established the coordinates of the control points. Control point information may be obtained from field measurements (for instance by GPS), from maps, or from other images</p></li>
+<li><p>Describe the rectification method and transformation type you used, and the resulting error. Many methods are available and each carries its own set of advantages and disadvantages. Each carries some unavoidable error, and this should be documented.</p></li>
+</ul>
+</section>
+<section id="type">
+<h2>Type<a class="headerlink" href="#type" title="Permalink to this heading">#</a></h2>
+<p>It’s a good idea to keep a technical description of each image that you work with. The following table summarises the major types of images available in aerial photography and remote sensing.</p>
+<ul class="simple">
+<li><p>Aerial Photography – generally types are variations on vertical or oblique photographic formats.</p>
+<ul>
+<li><p>Oblique Panchromatic / Panchromatic – Stereo</p></li>
+<li><p>Oblique Colour / Colour – Stereo</p></li>
+<li><p>Oblique FC / FC – Stereo</p></li>
+<li><p>Vertical Panchromatic / Panchromatic – Stereo</p></li>
+<li><p>Vertical Colour / Colour – Stereo</p></li>
+<li><p>Vertical FC / FC – Stereo</p></li>
+<li><p>Other (please specify)</p></li>
+</ul>
+</li>
+<li><p>Remote Sensing – airborne remotely sensed data are generally provided in digital form and normally come on magnetic tape, magnetic disk or optical media such as CD-ROM. Depending on the instrument, there may be several planes of information representing different spectral bands.</p>
+<ul>
+<li><p>Multispectral Scanner</p></li>
+<li><p>Thermal Linescanner</p></li>
+<li><p>Videography</p></li>
+<li><p>Digital photography</p></li>
+<li><p>Oblique Satellite Photography – Panchromatic / Panchromatic Stereo</p></li>
+<li><p>Oblique Satellite Photography – Colour / Colour Stereo</p></li>
+<li><p>Vertical Satellite Photography – Panchromatic / Panchromatic Stereo</p></li>
+<li><p>Vertical Satellite Photography – Colour / Colour Stereo</p></li>
+<li><p>Satellite Panchromatic Digital</p></li>
+<li><p>Satellite Multispectral Scanner Digital</p></li>
+<li><p>Satellite RADAR / RADAR – Stereo / RADAR – Polarimetry</p></li>
+<li><p>Other (please specify)</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="legend">
+<h2>Legend<a class="headerlink" href="#legend" title="Permalink to this heading">#</a></h2>
+<p>All interpretations based on aerial photography or remotely sensed data require documentation about the graphical conventions used. Graphical data are generally devalued if a legend is not supplied, or if it is inadequate or misleading. It’s well worth spending some time thinking about the kinds of information to include in your legend. In most cases this should not be an arduous task and it will generally allow you to organise and interpret your own data in a more efficient manner. Some organisations provide lists of standard conventions which can be adhered to when graphical output is generated.</p>
+<p>Begin your legend with a descriptive title. In some cases this may be all that is required. This may occur when you are working with a scanned air photograph as it is unlikely to need an extensive legend because information on its geographic location, resolution, source, and image type is held elsewhere in your documentation.</p>
+<p>Generally, though, every image should have an authoritative legend. In most instances these legends will still be very simple. For example, with categoric data you will need to document the numeric value, colour coding, shading, symbols or stippling associated with specific features. Although in many cases a simple description of a colour code may be sufficient, you should be aware that colours may display differently on individual computer screens.</p>
+<p>More complex situations may also emerge. In the case of multi- or hyper-spectral imagery from non-standard sensors it may well be necessary to provide an extensive legend specifying what each band represents.</p>
+<p>Legends may need to reflect the complexity of software used to provide data, or the data structure associated with specialist software. If an aerial photograph interpretation, for example, has been created in a CAD system the legend must reflect the fact that the information may be divided between separate layers representing specific themes. Each layer may be associated with a separate set of graphical conventions used to discriminate between specific objects or types of features. Clearly in this instance a nested legend describing individual layers and their associated conventions may be necessary. Alternatively, an image may have been prepared within a GIS which has the capability of attaching multiple text or numeric attributes through an associated table or database. Suitable documentation would include a description of the database structure, including any coding or related information needed to use the graphical database.</p>
+</section>
+<section id="bibliography">
+<h2>Bibliography<a class="headerlink" href="#bibliography" title="Permalink to this heading">#</a></h2>
+<p>It is often useful to keep track of bibliographic references of relevance to the origin, processing or interpretation of the digital resource. The Harvard System is recommended as this is commonly used in archaeology.</p>
+</section>
+<section id="references">
+<h2>References<a class="headerlink" href="#references" title="Permalink to this heading">#</a></h2>
+<p>[1] <a class="reference external" href="http://www.heritage-standards.org.uk/fish-vocabularies/">http://www.heritage-standards.org.uk/fish-vocabularies/</a></p>
+<p>[2] <a class="reference external" href="http://www.iso.org/iso/catalogue_detail?csnumber=40874">http://www.iso.org/iso/catalogue_detail?csnumber=40874</a></p>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./content"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+                <footer class="bd-footer-article">
+                  
+<div class="footer-article-items footer-article__inner">
+  
+    <div class="footer-article-item"><!-- Previous / next buttons -->
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="3_why_doc.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Why document your data?</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="../chapter_4.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Archiving your data</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div></div>
+  
+</div>
+
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#subject">Subject</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#spatial-and-temporal-coverage">Spatial and temporal coverage</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#format">Format</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rights-management">Rights management</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#creator">Creator</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#date">Date</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#relation">Relation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#instrumentation">Instrumentation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#resolution">Resolution</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#processsing-log">Processsing log</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#type">Type</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#legend">Legend</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bibliography">Bibliography</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#references">References</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Bob Bewley, Danny Donoghue, Vince Gaffney, Martijn van Leusen, Alicia Wise (1998). Revised by Bob Bewley and Kieron Niven, Archaeology Data Service / Digital Antiquity (2011)
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+<div class="extra_footer">
+  The Archaeology Data Service makes all of their materials publicly available under  <a href="https://archaeologydataservice.ac.uk/help-guidance/data-reuse/">a creative commons license</a>
+
+</div>
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

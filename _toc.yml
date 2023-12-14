@@ -1,0 +1,49 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: index
+chapters:
+- file: content/0_about_guide
+  title: About this guide
+- file: chapter_1
+  title: 1. Aerial Photography, Remote Sensing and Archaeology
+  sections:
+  - file: content/1_ap_im
+    title: Aerial photography and interpretative mapping
+  - file: content/1_remote_sensing
+    title: Remote sensing
+- file: chapter_2
+  title: 2. Digital Data Sources
+  sections:
+  - file: content/2_comm_data
+    title: Commercial data sources
+  - file: content/2_scan_digit
+    title: Scanning and digitising
+  - file: content/2_data_format
+    title: Overview of data formats
+- file: chapter_3
+  title: 3. Documenting your Resource
+  sections:
+  - file: content/3_why_doc
+    title: Why document your data?
+  - file: content/3_how_doc
+    title: How to document your resource
+- file: chapter_4
+  title: 4. Archiving your Data
+  sections:
+  - file: content/4_dep_info
+    title: Depositing information
+  - file: content/4_case_study
+    title: Aerial photography case study
+- file: chapter_5
+  title: 5. References
+  sections:
+  - file: content/5_bib
+    title: Bibliography
+  - file: content/5_sugg_reading
+    title: Suggested Reading
+  - file: content/5_glossary
+    title: Glossary
+  - file: content/5_app1
+    title: Appendix 1 - sources of aerial photography

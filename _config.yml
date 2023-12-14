@@ -1,0 +1,61 @@
+#######################################################################################
+# A default configuration that will be loaded for all jupyter books
+# Users are expected to override these values in their own `_config.yml` file.
+# This is also the "master list" of all allowed keys and values.
+
+#######################################################################################
+# Book settings
+# Learn more at https://jupyterbook.org/customize/config.html
+
+title: Aerial Survey, Remote Sensing and Archaeology - A Guide to Good Practice
+author: Bob Bewley, Danny Donoghue, Vince Gaffney, Martijn van Leusen, Alicia Wise (1998). Revised by Bob Bewley and Kieron Niven, Archaeology Data Service / Digital Antiquity (2011)
+copyright: "2023"
+logo: images/ads_logo.png
+email: "help@archaeologydataservice.ac.uk"
+
+#######################################################################################
+# Execution settings
+# Force re-execution of notebooks on each build.
+# See https://jupyterbook.org/content/execute.html
+execute:
+  execute_notebooks: force
+
+# Define the name of the latex output file for PDF builds
+latex:
+  latex_documents:
+    targetname: book.tex
+
+# Add a bibtex file so that we can create citations
+bibtex_bibfiles:
+  - references2.bib
+
+# Configure bibliography to correct style (author, year)
+sphinx:
+  config:
+    bibtex_reference_style: author_year
+
+# Information about where the book exists on the web
+repository:
+  url: https://github.com/nickyjgarland/g2gp_ap  # Online location of your book
+  path_to_book: docs  # Optional path to your book, relative to the repository root
+  branch: master  # Which branch of the repository should be used when creating links (optional)
+
+#######################################################################################
+# HTML-specific settings
+
+# Add GitHub buttons to your book
+# See https://jupyterbook.org/customize/config.html#add-a-link-to-your-repository
+html:
+  favicon                   : "images/ads_logo2.png"  # A path to a favicon image
+  navbar_number_sections    : false  # Add a number to each section in your left navbar
+  home_page_in_navbar       : true  # Whether to include your home page in the left Navigation Bar
+  use_repository_button     : true  # Whether to add an "Repository" button to pages. If `true`, repository information in repository: must be filled in
+  use_issues_button         : true # Whether to add an "Open issue" button to pages. If `true`, repository information in repository: must be filled in
+  use_edit_page_button      : true  # Whether to add an "Suggest edit" button to pages. If `true`, repository information in repository: must be filled in
+  baseurl                   : "https://archaeologydataservice.ac.uk/"  # The base URL where your book will be hosted. Used for creating image previews and social links. for example: https://mypage.com/mybook/
+  extra_navbar              : Visit our <a href="https://github.com/nickyjgarland/g2gp_ap">GitHub Repository</a>
+    <div>This book is powered by <a href="https://jupyterbook.org">Jupyter Book</a></div>
+  extra_footer: |
+    The Archaeology Data Service makes all of their materials publicly available under  <a href="https://archaeologydataservice.ac.uk/help-guidance/data-reuse/">a creative commons license</a>
+  comments:
+    hypothesis              : true

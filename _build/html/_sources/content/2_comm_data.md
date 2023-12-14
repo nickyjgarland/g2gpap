@@ -1,0 +1,7 @@
+# Commercial data sources
+
+## Commercial data
+It is a fair assumption that the majority of archaeological research projects using aerial photographs or satellite images generally won’t have need to mount flights or launch a satellite into space. Instead, most projects will have acquired such data via the variety of commercial organisations that collect and distribute these types of images. In addition, such companies can also supply the specialist advice required to interpret commercial photographs or satellite scenes. When considering suitable datasets at the outset of a project, aside from the budget, it is worth remembering that the golden rule of archaeological computing applies here: there is no need to redigitise data which is already held in a digital format!
+
+## Purchasing datasets
+Some things to consider when purchasing commercial datasets: scale or resolution, error, copyright and licensing information, types of pre-processing applied to the data, and amount and type of support. Attention to choosing data with an appropriate scale, resolution or error for project goals is particularly important, as the wrong decision may lead to invalid or inaccurate results. Likewise the user should ensure that they are aware of the full cost implications of data purchase. Costs will mount rapidly if the user does not have a full appreciation of the processing time or skills required to use specific imagery. For some common sources of commercial data, see [Appendix 1](../content/5_app1.md).
