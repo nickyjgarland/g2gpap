@@ -1,0 +1,597 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Aerial survey for archaeology &#8212; Aerial Survey, Remote Sensing and Archaeology - A Guide to Good Practice</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script async="async" kind="hypothesis" src="https://hypothes.is/embed.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'content/1_ap_im';</script>
+    <link rel="canonical" href="https://archaeologydataservice.ac.uk/content/1_ap_im.html" />
+    <link rel="shortcut icon" href="../_static/ads_logo2.png"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="The development of digital remote sensing" href="1_remote_sensing.html" />
+    <link rel="prev" title="Aerial Photography, Remote Sensing and Archaeology" href="../chapter_1.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
+
+<a class="navbar-brand logo" href="../index.html">
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/ads_logo.png" class="logo__image only-light" alt="Logo image"/>
+    <script>document.write(`<img src="../_static/ads_logo.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../index.html">
+                    Welcome
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="0_about_guide.html">About this guide</a></li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="../chapter_1.html">1. Aerial Photography, Remote Sensing and Archaeology</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Aerial photography and interpretative mapping</a></li>
+<li class="toctree-l2"><a class="reference internal" href="1_remote_sensing.html">The development of digital remote sensing</a></li>
+
+
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../chapter_2.html">2. Digital Data Sources</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="2_comm_data.html">Commercial data sources</a></li>
+<li class="toctree-l2"><a class="reference internal" href="2_scan_digit.html">Scanning and digitising</a></li>
+<li class="toctree-l2"><a class="reference internal" href="2_data_format.html">Overview of data formats</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../chapter_3.html">3. Documenting your Resource</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="3_why_doc.html">Why document your data?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="3_how_doc.html">How to document your resource</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../chapter_4.html">4. Archiving your Data</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="4_dep_info.html">Depositing information</a></li>
+<li class="toctree-l2"><a class="reference internal" href="4_case_study.html">Aerial photography case study</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../chapter_5.html">5. References</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="5_bib.html">Bibliography</a></li>
+<li class="toctree-l2"><a class="reference internal" href="5_sugg_reading.html">Suggested Reading</a></li>
+<li class="toctree-l2"><a class="reference internal" href="5_glossary.html">Glossary</a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li class="toctree-l2"><a class="reference internal" href="5_app1.html">Appendix 1 - sources of aerial photography</a></li>
+</ul>
+</li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/nickyjgarland/g2gp_ap" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/nickyjgarland/g2gp_ap/edit/master/docs/content/1_ap_im.md" target="_blank"
+   class="btn btn-sm btn-source-edit-button dropdown-item"
+   title="Suggest edit"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-pencil-alt"></i>
+  </span>
+<span class="btn__text-container">Suggest edit</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/nickyjgarland/g2gp_ap/issues/new?title=Issue%20on%20page%20%2Fcontent/1_ap_im.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/content/1_ap_im.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script>
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Aerial survey for archaeology</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#a-brief-history-of-the-development-of-aerial-photographs-for-archaeology">A brief history of the development of aerial photographs for archaeology</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#types-of-aerial-photograph">Types of aerial photograph</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mapping-data-derived-from-aerial-photographs">Mapping data derived from aerial photographs</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="aerial-survey-for-archaeology">
+<h1>Aerial survey for archaeology<a class="headerlink" href="#aerial-survey-for-archaeology" title="Permalink to this heading">#</a></h1>
+<p>This section presents a brief overview of the history and role of aerial photography and remote sensing in archaeology. It discusses the principal methods employed.</p>
+<section id="a-brief-history-of-the-development-of-aerial-photographs-for-archaeology">
+<h2>A brief history of the development of aerial photographs for archaeology<a class="headerlink" href="#a-brief-history-of-the-development-of-aerial-photographs-for-archaeology" title="Permalink to this heading">#</a></h2>
+<p>Air photographs may reveal archaeological sites directly, where they are extant, or as crop, soil or other surface indications where the site is buried. Taking photographs from the air began with balloons in the nineteenth century, and has developed as a means of landscape survey during the twentieth century using aircraft, mainly aeroplanes and helicopters, and more recently using satellite imagery. One of the earliest aerial photographs of an archaeological site was taken from a balloon in 1906, and shows Stonehenge. Between the two World Wars the technique was developed by a number of British, French and German scholars in Europe, the Middle East and the Mediterranean. In Britain, the major pioneers during the 1920s and 1930s were O.G.S. Crawford, and Major Allen. During the Second World War, aerial photography was developed for reconnaissance purposes, and air photo interpretation became a technique requiring highly skilled staff. Derrick Riley, bomber pilot and later a flying instructor at Stanton Harcourt, had the opportunity to fly extensively over the Thames Valley where he observed, and sometimes had the opportunity to photograph, archaeological sites. Many archaeologists were employed as air photo interpreters during the war, and Crawford was able to make successful requests to the RAF (during the war) for reconnaissance flights to record cropmarks (most notably Verulamium, St Albans in Hertfordshire).</p>
+<p>For the majority of the twentieth century the majority of work focused on data capture – taking and collecting aerial photographs, although Crawford was a pioneer in making maps of archaeological sites from aerial photographs from the start. After the Second World War, and especially in the 1950s, the interpretation of the information derived from aerial photographs slowly became as important as aerial reconnaissance itself. Pioneering projects which examined the impact of gravel extraction on archaeological sites in river valleys resulted in the seminal publication A Matter of Time <span id="id1">[<a class="reference internal" href="5_bib.html#id22" title="RCHME. A Matter of Time. HMSO, 1960.">RCHME, 1960</a>]</span> and in mapping projects in the Thames Valley and other parts of Britain. The formation of the Cambridge University Committee for Aerial Photography (CUCAP, in 1949) and the RCHME’s Air Photography Unit (in 1965) provided a solid foundation for the discipline, going beyond data capture with a series of publications by St Joseph and colleagues.</p>
+<p>Aerial reconnaissance and interpretation are now routine methods in the UK and in many parts of Europe for the discovery and understanding of archaeological sites. In England, a National Mapping Programme has been running since 1993 <span id="id2">[<a class="reference internal" href="5_bib.html#id28" title="Historic England. Aerial Investigation: Using Aerial Sources to Map Archaeology and Landscapes \textbar  Historic England — historicengland.org.uk. 2023. URL: https://historicengland.org.uk/research/methods/airborne-remote-sensing/aerial-investigation/.">England, 2023</a>]</span>, and there are targeted mapping projects in Scotland and Wales. Other European countries have had varying degrees of success with aerial survey, but France, Germany, Czech Republic, Poland, Italy and Britain have been particularly successful. Since 1990, and the end of the Cold War, many countries of the former Eastern Bloc are now able to undertake surveys, and aerial survey is becoming a much more widely used technique.</p>
+</section>
+<section id="types-of-aerial-photograph">
+<h2>Types of aerial photograph<a class="headerlink" href="#types-of-aerial-photograph" title="Permalink to this heading">#</a></h2>
+<p>A variety of aerial photographs exist in terms of format, film types, and print sizes. The major distinction for archaeological purposes is between vertical photographs (taken by commercial companies for mapping purposes, census information, or other tasks, as well as historic verticals taken by the RAF) and oblique photographs, taken for specifically archaeological purposes.</p>
+<p>There are many sources of vertical photographs (see <a class="reference internal" href="5_app1.html"><span class="doc std std-doc">Appendix 1</span></a>), and national collections of historic vertical photographs are held by English Heritage, the Royal Commission on the Ancient Historical Monuments of Scotland (RCAHMS) and by the Welsh office for Wales. An organisation, NAPLIB, has also produced a directory of all holders of aerial photographs (NAPLIB 1993).There are also many collections of oblique photographs; the main ones for archaeological research are the three Royal Commissions (England, Scotland and Wales) as well as what was CUCAP but is now the Unit for Landscape Modelling. Many county councils also have collections of vertical and oblique photographs.</p>
+<p>The distinguishing characteristics between vertical and oblique photographs are as follows:</p>
+<ul class="simple">
+<li><p>Verticals require less geometric transformation when creating archaeological maps but usually they have not been taken in optimum conditions for the archaeological interpretation of sites. Oblique photographs are more often taken for archaeological purposes, and therefore contain information relating to archaeological sites, but the oblique angle means that to create maps a more complex transformation system (either computerised or manual) is required.</p></li>
+<li><p>For both types of photograph the same air photo interpretation skills are required, but vertical photographs are more often capable of being used in stereo pairs. The stereo image enhances the opportunities for a confident interpretation. Oblique stereo images are taken by some aerial photographers but are less common.
+The rapid developments in digital photography have meant that in the last few years there is little “film” photography done in the UK and it is predominantly digital; all the major aerial reconnaissance teams use only digital cameras. The majority of aerial photographs (until the 1980s) were taken on black-and-white film, but colour photography (for both verticals and obliques) became much more common (in either print or slide format). Infra-red (both black-and-white and false colour) films are also used but costs and difficulties in both storage and handling have meant that their use is not as widespread as it might be, given the good results. Apart from the commercial vertical survey companies, who use calibrated vertically mounted cameras, the majority of archaeological aerial photographers use either 35mm hand-held cameras or medium format cameras <span id="id3">[<a class="reference internal" href="5_bib.html#id5" title="R.H. Bewley. Aerial photography for archaeology. In J. Hunter and I. Ralston, editors, Archaeological Resource Management in the UK: an Introduction Stroud, pages 197–204. 1993.">Bewley, 1993</a>]</span>.</p></li>
+</ul>
+</section>
+<section id="mapping-data-derived-from-aerial-photographs">
+<h2>Mapping data derived from aerial photographs<a class="headerlink" href="#mapping-data-derived-from-aerial-photographs" title="Permalink to this heading">#</a></h2>
+<p>Common practice is for digital rectification of the information contained on aerial photographs from the oblique (or vertical) photograph to a map or plan. There are a number of types of interpretative mapping data in use and for more details see the relevant websites. English Heritage is producing a manual for its National Mapping Programme, in the near future.</p>
+<ul class="simple">
+<li><p><em>paper or film formats of rectified plans</em> derived from interpretations of aerial photographs. These have usually been created manually or via a computerised mapping system and drawn up by hand using ink on a translucent film. Scales used vary from 1:500 to 1:25,000. This type of plan represents the majority of data to 1998.</p></li>
+<li><p><em>digital (rectified) plans in an interim form</em> derived from aerial photographic interpretations. These are generally used as the basis for the above.</p></li>
+<li><p><em>digital (rectified) plans which are in a final form</em>, having been created using digital rectification methods and computer-aided design packages to create the final plan. This is standard practice throughout Britain, in English Heritage and the two Royal Commissions and in commercial mapping companies.</p></li>
+<li><p><em>(unrectified) sketch plots</em>, where the archaeological features have been traced from a photograph but no rectification programme was applied. These are few in number and should not be used for archaeological evaluation purposes.</p></li>
+</ul>
+<p>A variety of computers linked to stereo mapping machines are available for detailed photogrammetric survey (as used by the RCHME, and in various parts of Europe, especially Austria and Italy), but the majority of machines are stand-alone PCs attached to a digitiser and plotter. Details on the specification of the hardware and software used can be supplied on request from any of the organisations listed under “aerial photography mapping and interpretation” section of <a class="reference internal" href="5_app1.html"><span class="doc std std-doc">Appendix 1</span></a>. For further information on commercial sources of both photographs and digital data relating to photographs, maps and plans, please also see <a class="reference internal" href="5_app1.html"><span class="doc std std-doc">Appendix 1</span></a>. Further details regarding digital vector mapping can be obtained from the <a class="reference external" href="https://archaeologydataservice.ac.uk/help-guidance/guides-to-good-practice/data-analysis-and-visualisation/gis/introduction-to-the-gis-guide/how-to-use-this-guide/">GIS</a> and <a class="reference external" href="https://archaeologydataservice.ac.uk/help-guidance/guides-to-good-practice/data-analysis-and-visualisation/cad/a-brief-introduction-to-cad/an-introduction-to-the-cad-guide/">CAD</a> Guides.</p>
+<p>Finally, it is important to emphasise that the maps, either in digital or paper form, are best used in conjunction with archaeological records which contain the description of the sites mapped and interpreted. There are a number of databases which provide such information: the national records in England, Northern Ireland, Scotland, and Wales; local HERs (Historic Environment Records); and commercial archaeological mapping companies. The basic information required for any site is its location (physical and administrative), its date, a short description, and an interpretation.</p>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./content"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+                <footer class="bd-footer-article">
+                  
+<div class="footer-article-items footer-article__inner">
+  
+    <div class="footer-article-item"><!-- Previous / next buttons -->
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="../chapter_1.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Aerial Photography, Remote Sensing and Archaeology</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="1_remote_sensing.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">The development of digital remote sensing</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div></div>
+  
+</div>
+
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#a-brief-history-of-the-development-of-aerial-photographs-for-archaeology">A brief history of the development of aerial photographs for archaeology</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#types-of-aerial-photograph">Types of aerial photograph</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mapping-data-derived-from-aerial-photographs">Mapping data derived from aerial photographs</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Bob Bewley, Danny Donoghue, Vince Gaffney, Martijn van Leusen, Alicia Wise (1998). Revised by Bob Bewley and Kieron Niven, Archaeology Data Service / Digital Antiquity (2011)
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+<div class="extra_footer">
+  The Archaeology Data Service makes all of their materials publicly available under  <a href="https://archaeologydataservice.ac.uk/help-guidance/data-reuse/">a creative commons license</a>
+
+</div>
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
