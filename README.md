@@ -2,6 +2,8 @@
 
 Welcome to the repository for the Guide to Good Practice for Aerial Survey. The guide and this repository is maintined by staff at the [Archaeology Data Service](https://archaeologydataservice.ac.uk/).
 
+![ADS_logo](ads_logo.png)
+
 # About the guide
 
 The primary aim of the Guides to Good Practice is to provide information on the best way to create, manage, and document digital material produced during the course of an archaeological project. The ultimate aim of the Guides is to improve the practice of depositing and preserving digital information safely within an archive for future use. Further information about the guides and their history can be found on the [homepage](https://nickyjgarland.github.io/g2gpap/index.html) of this Guide to Good Practice.
@@ -13,6 +15,8 @@ This document is intended to be a Guide to Good Practice for the creation and pr
 This guide is perodically updated to take into account changes in both aerial survey and digitial preservaion. We also encourage our community to contibute and improve these guides through their own knowldge and expertise. 
 
 If you have a suggestion please open an issue within this Github repository. Documentation about how to undertaken this is provided in the [Github docs](https://docs.github.com/en/issues/tracking-your-work-with-issues/creating-an-issue). Before you open a new issue, please check if any of our [open issues](https://github.com/nickyjgarland/g2gpap/issues) cover your suggestions already. Alternatively if you are more comformble you can contact the ADS directly with your suggestion (see below).
+
+![Screenshot](g2gp_screenshot.png)
 
 # How to cite this guide
 
