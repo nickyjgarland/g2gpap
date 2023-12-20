@@ -1,4 +1,4 @@
-# LICENSE
+# Licence
 
 All resources archived with the ADS are [Open Access](https://archaeologydataservice.ac.uk/about/policies/use-access-to-data/), and delivered through our website to facilitate reuse by the heritage sector and wider community.
 
