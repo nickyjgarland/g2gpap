@@ -1,21 +1,37 @@
-cff-version: 1.0
+cff-version: 1.2.0
 message: "To reference the latest version of this Guide to Good Practice, please cite it as below."
 authors:
-  - name: "Bob Bewley, Danny Donoghue, Vince Gaffney, Martijn van Leusen, Alicia Wise, Kieron Niven"
+  - family-names: "Bewley"
+    given-names: "Bob"
+  - family-names: "Donoghue"
+    given-names: "Danny"
+  - family-names: "Gaffney"
+    given-names: "Vince"
+    orcid: "https://orcid.org/0000-0001-7918-0494"
+  - family-names: "van Leusen"
+    given-names: "Martijn"
+    orcid: "https://orcid.org/0000-0002-4778-9534"
+  - family-names: "Wise"
+    given-names: "Alicia"
+    orcid: "https://orcid.org/0000-0002-7898-3428"
+  - family-names: "Niven"
+    given-names: "Kieron"
+    orcid: "https://orcid.org/0000-0002-0537-9238"
 title: "A Guide to Good Practice for Aerial Survey"
 version: 1.0
 identifiers:
   - description: The concept DOI for the collection containing all versions of the Citation File Format.
     type: doi
-    value: "10.5284/??????"
+    value: "10.5284/00000"
 license: "CC-BY-4.0"
 date-released: "2023-12-20"
+url: "https://github.com/nickyjgarland/g2gpap"
 keywords:
   - archaeology
   - aerial survey
   - good practice
   - guidelines
   - reproducabilty
-doi: 10.5284/??????
+doi: 10.5284/000000
 references:
-  - type: book
+  - type: manual
