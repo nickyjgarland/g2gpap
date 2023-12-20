@@ -1,0 +1,21 @@
+cff-version: 1.0
+message: "To reference the latest version of this Guide to Good Practice, please cite it as below."
+authors:
+  - name: "Bob Bewley, Danny Donoghue, Vince Gaffney, Martijn van Leusen, Alicia Wise, Kieron Niven"
+title: "A Guide to Good Practice for Aerial Survey"
+version: 1.0
+identifiers:
+  - description: The concept DOI for the collection containing all versions of the Citation File Format.
+    type: doi
+    value: "10.5284/??????"
+license: "CC-BY-4.0"
+date-released: "2023-12-20"
+keywords:
+  - archaeology
+  - aerial survey
+  - good practice
+  - guidelines
+  - reproducabilty
+doi: 10.5284/??????
+references:
+  - type: book
