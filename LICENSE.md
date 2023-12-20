@@ -2,8 +2,6 @@
 
 All resources archived with the ADS are [Open Access](https://archaeologydataservice.ac.uk/about/policies/use-access-to-data/), and delivered through our website to facilitate reuse by the heritage sector and wider community.
 
-This Guide to Good 
-
 All documentation and chapter materials in this repository are made available under the [Creative Commons Attribution license](cc-by-human). The following is a human-readable summary of (and not a substitute for) the [full legal text of the CC BY 4.0 license](cc-by-legal).
 
 You are free to:
