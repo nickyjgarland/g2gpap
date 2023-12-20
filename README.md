@@ -1,6 +1,6 @@
 # Introduction
 
-Welcome to the repositoty for the Guide to Good Practice for Aerial Survey. The guide and this repository is maintined by staff at the [Archaeology Data Service](https://archaeologydataservice.ac.uk/)
+Welcome to the repository for the Guide to Good Practice for Aerial Survey. The guide and this repository is maintined by staff at the [Archaeology Data Service](https://archaeologydataservice.ac.uk/).
 
 # About the guide
 
@@ -30,7 +30,7 @@ All material in this guide is available open access under a CC-BY 4.0 licence.
 
 # Get in Touch
 
-If you have any quetsions about this guide or the repository please [contact](https://archaeologydataservice.ac.uk/contact/) the ADS Helpdesk (help@archaeologydataservice.ac.uk).
+If you have any questions about this guide or the repository please [contact](https://archaeologydataservice.ac.uk/contact/) the ADS Helpdesk (help@archaeologydataservice.ac.uk).
 
 If you would like to learn more about the Archaeology Data Service please visit our [website]((https://archaeologydataservice.ac.uk/)). All the latest News can be found on our [News and Events](https://archaeologydataservice.ac.uk/news-events/) pages or the ADS Blog - [SoundBytes](https://archaeologydataservice.ac.uk/blog/). You can also sign up to recieve the [ADS Newsletter](https://archaeologydataservice.ac.uk/news-events/signup-ads-newsletter/), a quarterley online publication, or follow us via social media.
 
