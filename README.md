@@ -12,7 +12,7 @@ This document is intended to be a Guide to Good Practice for the creation and pr
 
 # Contributing to this guide
 
-This guide is perodically updated to take into account changes in both aerial survey and digitial preservaion. We also encourage our community to contibute and improve these guides through their own knowldge and expertise. 
+This guide is perodically updated to take into account changes in both aerial survey and digitial preservation. We also encourage our community to contribute and improve these guides through their own knowldge and expertise. 
 
 If you have a suggestion please open an issue within this Github repository. Documentation about how to undertaken this is provided in the [Github docs](https://docs.github.com/en/issues/tracking-your-work-with-issues/creating-an-issue). Before you open a new issue, please check if any of our [open issues](https://github.com/nickyjgarland/g2gpap/issues) cover your suggestions already. Alternatively if you are more comformble you can contact the ADS directly with your suggestion (see below).
 
